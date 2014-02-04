@@ -4,6 +4,10 @@ key-tree-test
 Testing binary based key interface. Eventually it could run using a spiff type glove, but this test uses five keyboard keys.
 
 Currently uses pygames and python2.
+I think I will extend and experiment with just text editing using pygame. Then once I have better ideas about it I'll rewrite it so that it has access to modkeys and the greater system. Finally I want to make a glove type thing with buttons on the finger tips to control/ type with.
+
+How to type:
+============
 
 I'm using the keys "space" "u" "8" "9" and "p" because on my keyboard the do not conflict with one another. I hope it is the same on yours, however my laptop doesn't work with it, so...
 
