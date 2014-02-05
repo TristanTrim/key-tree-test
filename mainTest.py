@@ -16,7 +16,7 @@ pygame.display.set_mode((200,200))
 
 
 typedstuff = ""
-
+shift=False
 while True:
 
   space = False
@@ -70,7 +70,15 @@ while True:
     keyValue+=16
 
   if(keyValue>-1):
-    typedstuff+=charSets.charSets.normal[keyValue]
+    SYM=charSets.charSets.normal[keyValue]
+    if(SYM=='SHIFT'):
+      shift=True
+    elif(shift):
+      typedstuff+=charSets.charSets.shift[keyValue]
+      shift=False
+    else:
+      typedstuff+=SYM
+      
     print("\n\n\n\n\n")
     print(typedstuff)
 
